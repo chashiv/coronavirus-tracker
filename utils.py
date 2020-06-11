@@ -66,8 +66,8 @@ def get_column_by_index(reader, index):
     :param index:
     :return:
     """
-    # No of States and UTs = 35 => looping in the range (1,35)
-    index_range = range(1, 38) if index == constants.TOTAL_CONFIRMED_CASES_INDEX else range(1, 36)
+    # No of States and UTs = 36 => looping in the range (1,37)
+    index_range = range(1, 39) if index == constants.TOTAL_CONFIRMED_CASES_INDEX else range(1, 37)
     return [reader[row_index][index] for row_index in index_range]
 
 
